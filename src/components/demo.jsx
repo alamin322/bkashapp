@@ -1,8 +1,6 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-
-
 // ================================ Start Import all the components ===============================
 import Home from './src/pages/Home';
 import SplashScreen from './src/pages/SplashScreen';
@@ -11,7 +9,6 @@ import UserProfile from './src/pages/UserProfile';
 
 // create a new NavigationContainer object
 const Stack = createNativeStackNavigator();
-
 
 // Create your app
 const App = () => {

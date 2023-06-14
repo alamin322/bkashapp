@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
-import { Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import { Image, StyleSheet, Text, TouchableOpacity, View, Button } from 'react-native';
 import IconMoney from 'react-native-vector-icons/MaterialIcons';
 // ================= For navigation different page =================
 import { useNavigation } from '@react-navigation/native';
+import { Drawer } from 'react-native-drawer-layout';
 
 
 
@@ -10,6 +11,7 @@ import { useNavigation } from '@react-navigation/native';
 const Header = () => {
 
     const [balance, setBalance] = useState("Tap to check you Balance");
+    const [open, setOpen] = useState(false);
     const navigation = useNavigation();
 
     const showBalance = () => {
@@ -26,12 +28,12 @@ const Header = () => {
 
     return (
         <View>
-
             {/* Header Section */}
             < View style={styles.container} >
 
                 <View style={styles.leftContainer}>
-                    <TouchableOpacity onPress={handleProfileClick}>
+
+                    <TouchableOpacity onPress={() => navigation.openDrawer()}>
                         <Image
                             source={require('../assets/images/user.png')}
                             style={styles.userImage}
@@ -39,7 +41,6 @@ const Header = () => {
                             alt='UserImage'
                         />
                     </TouchableOpacity>
-
                 </View>
 
                 <View style={styles.middleContainer}>
