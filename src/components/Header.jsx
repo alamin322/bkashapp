@@ -8,7 +8,7 @@ import { Drawer } from 'react-native-drawer-layout';
 
 
 // Create components from here
-const Header = () => {
+const Header = ({iconClick}) => {
 
     const [balance, setBalance] = useState("Tap to check you Balance");
     const [open, setOpen] = useState(false);
@@ -59,7 +59,7 @@ const Header = () => {
                 </View>
 
                 <View style={styles.rightContainer}>
-                    <TouchableOpacity>
+                    <TouchableOpacity onPress={iconClick}>
                         <Image
                             source={require('../assets/images/logo/logo.png')}
                             style={styles.logo}

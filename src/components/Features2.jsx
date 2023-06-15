@@ -10,9 +10,9 @@ const Features = () => {
         { id: '3', name: 'Cash Out', image: require('../assets/icons/cashout.webp') },
         { id: '4', name: 'Payment', image: require('../assets/icons/payment.webp') },
         { id: '5', name: 'Add Money', image: require('../assets/icons/addmoney.webp') },
-        { id: '6', name: 'Pay Bill', image: require('../assets/icons/paybill.webp') },
-        { id: '7', name: 'Savings', image: require('../assets/icons/savings.webp') },
-        { id: '8', name: 'Loan', image: require('../assets/icons/loan.webp') },
+        { id: '6', name: 'PayBill', image: require('../assets/icons/paybill.webp') },
+        { id: '7', name: 'Ticket', image: require('../assets/icons/ticket.png') },
+        { id: '8', name: 'More..', image: require('../assets/icons/more.png') },
     ];
 
     // const renderFeaturesItems = ({ item }) => (

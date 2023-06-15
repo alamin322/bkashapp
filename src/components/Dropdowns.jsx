@@ -15,13 +15,13 @@ const DropdownItems = (props) => {
     };
 
     const data = [
-        { id: '1', name: '01875950618', image: require('../assets/icons/payment.png') },
-        { id: '2', name: '01975950618', image: require('../assets/icons/payment.png') },
-        { id: '3', name: '01675950618', image: require('../assets/icons/sendmoney.png') },
-        { id: '4', name: '01675950618', image: require('../assets/icons/sendmoney.png') },
-        { id: '5', name: '01675950618', image: require('../assets/icons/cashout.png') },
-        { id: '6', name: '01675950618', image: require('../assets/icons/addmoney.png') },
-        { id: '7', name: '01675950618', image: require('../assets/icons/addmoney.png') },
+        { id: '1', name: '01875950618', image: require('../assets/icons/payment.webp') },
+        { id: '2', name: '01975950618', image: require('../assets/icons/payment.webp') },
+        { id: '3', name: '01675950618', image: require('../assets/icons/sendmoney.webp') },
+        { id: '4', name: '01675950618', image: require('../assets/icons/sendmoney.webp') },
+        { id: '5', name: '01675950618', image: require('../assets/icons/cashout.webp') },
+        { id: '6', name: '01675950618', image: require('../assets/icons/addmoney.webp') },
+        { id: '7', name: '01675950618', image: require('../assets/icons/addmoney.webp') },
     ];
 
     // const renderFeaturesItems = ({ item }) => (
